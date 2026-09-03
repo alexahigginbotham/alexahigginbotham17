@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alexa Higginbotham | Marketing & Management</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f8f7f4;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        /* NAVIGATION */
+        nav {
+            width: 100%;
+            padding: 20px 8%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #222;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #777;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 10%;
+            background-color: #eeece7;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            font-weight: normal;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 35px;
+            font-size: 18px;
+            color: #444;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 30px;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        /* GENERAL SECTIONS */
+        section {
+            padding: 90px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 50px;
+        }
+
+        /* ABOUT */
+        .about {
+            background-color: #ffffff;
+        }
+
+        .about-container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .about p {
+            font-size: 17px;
+            margin-bottom: 25px;
+            color: #444;
+        }
+
+        /* EDUCATION */
+        .education {
+            background-color: #eeece7;
+        }
+
+        .education-card {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        .education-card h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .education-card h4 {
+            font-size: 18px;
+            font-weight: normal;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .education-card p {
+            color: #444;
+        }
+
+        /* EXPERIENCE */
+        .experience {
+            background-color: white;
+        }
+
+        .experience-grid {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .experience-card {
+            padding: 35px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        .experience-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .experience-card p {
+            color: #555;
+        }
+
+        /* SKILLS */
+        .skills {
+            background-color: #eeece7;
+        }
+
+        .skills-container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            border: 1px solid #ddd;
+        }
+
+        /* CONTACT */
+        .contact {
+            background-color: #222;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #ddd;
+        }
+
+        .contact .button {
+            background-color: white;
+            color: #222;
+        }
+
+        .contact .button:hover {
+            background-color: #ddd;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 70px 7%;
+            }
+
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">Alexa Higginbotham</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HOME / HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Alexa Higginbotham</h1>
+
+            <h2>
+                Marketing & Management Student
+            </h2>
+
+            <p>
+                Iowa State University | Ivy College of Business | Sales Certificate
+            </p>
+
+            <a href="#about" class="button">
+                Learn More About Me
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="about-container">
+
+            <p>
+                I’m Alexa Higginbotham, a junior enrolled in Iowa State's
+                "Ivy College of Business” studying Marketing and Management
+                while obtaining my Sales Certificate.
+            </p>
+
+            <p>
+                By being an active member in Collegiate Women in Business,
+                Iowa State’s Fashion Show, while dedicating my time on gaining
+                hard/soft skills in the workforce in the past 5 years, my
+                passion for business has expanded tremendously and I'm ready
+                to keep learning.
+            </p>
+
+            <p>
+                I'm looking forward to the knowledge I'll gain this year at
+                Iowa State, but I strongly believe experience is the key to
+                success. With that in mind I desire to expand my network,
+                challenge myself everyday, keep saying yes, and continue to
+                strive high in my academics.
+            </p>
+
+            <p>
+                I'm a hard worker, a strong communicator, and I can't get
+                knocked down easily. I look forward to connecting with you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="education" id="education">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <div class="education-card">
+
+            <h3>
+                Iowa State University
+            </h3>
+
+            <h4>
+                Ivy College of Business
+            </h4>
+
+            <p>
+                Bachelor of Business Administration
+            </p>
+
+            <p>
+                Marketing & Management
+            </p>
+
+            <p>
+                Sales Certificate
+            </p>
+
+            <p>
+                Junior
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experience">
+
+        <h2 class="section-title">
+            Experience & Involvement
+        </h2>
+
+        <div class="experience-grid">
+
+            <div class="experience-card">
+
+                <h3>
+                    Collegiate Women in Business
+                </h3>
+
+                <p>
+                    Active member focused on professional development,
+                    networking, leadership, and building meaningful
+                    connections with other business students.
+                </p>
+
+            </div>
+
+
+            <div class="experience-card">
+
+                <h3>
+                    Iowa State Fashion Show
+                </h3>
+
+                <p>
+                    Active involvement in Iowa State's Fashion Show,
+                    gaining experience in collaboration, creativity,
+                    communication, and organization.
+                </p>
+
+            </div>
+
+
+            <div class="experience-card">
+
+                <h3>
+                    Workforce Experience
+                </h3>
+
+                <p>
+                    Five years of workforce experience dedicated to
+                    developing both hard and soft skills while learning
+                    how to communicate, collaborate, and succeed in
+                    professional environments.
+                </p>
+
+            </div>
+
+
+            <div class="experience-card">
+
+                <h3>
+                    Professional Development
+                </h3>
+
+                <p>
+                    Continuously looking for opportunities to expand my
+                    network, challenge myself, learn new skills, and
+                    grow professionally.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills">
+
+        <h2 class="section-title">
+            Skills & Strengths
+        </h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                Communication
+            </div>
+
+            <div class="skill">
+                Marketing
+            </div>
+
+            <div class="skill">
+                Management
+            </div>
+
+            <div class="skill">
+                Sales
+            </div>
+
+            <div class="skill">
+                Networking
+            </div>
+
+            <div class="skill">
+                Teamwork
+            </div>
+
+            <div class="skill">
+                Leadership
+            </div>
+
+            <div class="skill">
+                Hard Worker
+            </div>
+
+            <div class="skill">
+                Adaptability
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">
+            Let's Connect
+        </h2>
+
+        <p>
+            I'm always looking to expand my network, meet new people,
+            learn from others, and discover new opportunities.
+            I look forward to connecting with you.
+        </p>
+
+        <a href="mailto:YOUR-EMAIL@example.com" class="button">
+            Contact Me
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Alexa Higginbotham. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
