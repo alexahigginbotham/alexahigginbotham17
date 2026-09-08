@@ -1,205 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Alexa Higginbotham | Marketing & Management</title>
+    <title>Alexa | Personal Website</title>
 
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav class="navigation">
-        <button onclick="scrollToSection('about')">About Me</button>
-        <button onclick="scrollToSection('work')">Work Experience</button>
-        <button onclick="scrollToSection('education')">Education</button>
-        <button onclick="scrollToSection('involvement')">Involvement</button>
-    </nav>
+    <div class="site-wrapper">
 
+        <!-- =========================
+             HEADER
+        ========================== -->
+        <header class="site-header">
 
-    <!-- HOME / HERO -->
-    <section class="hero" id="home">
+            <div class="header-top">
 
-        <div class="hero-content">
+                <!-- Logo -->
+                <div class="logo-area">
+                    Logo
+                </div>
 
-            <h1>Alexa Higginbotham</h1>
-
-            <h2>Marketing & Management Student</h2>
-
-            <p>
-                Iowa State University | Ivy College of Business | Sales Certificate
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT ME -->
-    <section class="about" id="about">
-
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about-container">
-
-            <p>
-                I’m Alexa Higginbotham, a junior enrolled in Iowa State's
-                "Ivy College of Business” studying Marketing and Management
-                while obtaining my Sales Certificate.
-            </p>
-
-            <p>
-                By being an active member in Collegiate Women in Business,
-                Iowa State’s Fashion Show, while dedicating my time on gaining
-                hard/soft skills in the workforce in the past 5 years, my
-                passion for business has expanded tremendously and I'm ready
-                to keep learning.
-            </p>
-
-            <p>
-                I'm looking forward to the knowledge I'll gain this year at
-                Iowa State, but I strongly believe experience is the key to
-                success. With that in mind I desire to expand my network,
-                challenge myself everyday, keep saying yes, and continue to
-                strive high in my academics.
-            </p>
-
-            <p>
-                I'm a hard worker, a strong communicator, and I can't get
-                knocked down easily. I look forward to connecting with you.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- WORK EXPERIENCE -->
-    <section class="experience" id="work">
-
-        <h2 class="section-title">Work Experience</h2>
-
-        <div class="experience-grid">
-
-            <div class="experience-card">
-
-                <h3>Professional Experience</h3>
-
-                <p>
-                    Throughout the past five years, I have dedicated my time
-                    to gaining valuable hard and soft skills in the workforce.
-                    These experiences have helped me develop my communication,
-                    teamwork, adaptability, and professionalism.
-                </p>
+                <!-- Informational Graphic / Introduction -->
+                <div class="header-information">
+                    <p>
+                        Welcome to my personal website.
+                        This website provides information about my
+                        background, education, work experience,
+                        involvement, and projects.
+                    </p>
+                </div>
 
             </div>
 
-            <div class="experience-card">
-
-                <h3>Skills Developed</h3>
-
-                <p>
-                    My work experiences have allowed me to become a strong
-                    communicator, dependable team member, problem solver,
-                    and hardworking individual.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
+        </header>
 
 
-    <!-- EDUCATION -->
-    <section class="education" id="education">
+        <!-- =========================
+             NAVIGATION
+        ========================== -->
 
-        <h2 class="section-title">Education</h2>
-
-        <div class="education-card">
-
-            <h3>Iowa State University</h3>
-
-            <h4>Ivy College of Business</h4>
-
-            <p>Marketing & Management</p>
-
-            <p>Sales Certificate</p>
-
-            <p>Junior</p>
-
-        </div>
-
-    </section>
+        <div id="site-navigation"></div>
 
 
-    <!-- INVOLVEMENT -->
-    <section class="involvement" id="involvement">
+        <!-- =========================
+             MAIN PAGE LAYOUT
+        ========================== -->
 
-        <h2 class="section-title">Involvement</h2>
-
-        <div class="experience-grid">
-
-            <div class="experience-card">
-
-                <h3>Collegiate Women in Business</h3>
-
-                <p>
-                    Active member of Collegiate Women in Business,
-                    developing professional relationships and expanding
-                    my network while learning from other business students.
-                </p>
-
-            </div>
+        <main class="main-layout">
 
 
-            <div class="experience-card">
+            <!-- =========================
+                 LEFT SIDEBAR
+            ========================== -->
 
-                <h3>Iowa State Fashion Show</h3>
+            <aside class="left-sidebar">
 
-                <p>
-                    Active involvement in Iowa State's Fashion Show,
-                    gaining experience in collaboration, creativity,
-                    communication, and organization.
-                </p>
+                <h2>Navigation</h2>
 
-            </div>
+                <a href="index.html">
+                    Home
+                </a>
 
-        </div>
+                <a href="about.html">
+                    About Me
+                </a>
 
-    </section>
+                <a href="work-experience.html">
+                    Work Experience
+                </a>
 
+                <a href="education.html">
+                    Education
+                </a>
 
-    <!-- CONTACT -->
-    <section class="contact">
+                <a href="involvement.html">
+                    Involvement
+                </a>
 
-        <h2>Let's Connect</h2>
-
-        <p>
-            I'm always looking to expand my network, challenge myself,
-            and discover new opportunities.
-        </p>
-
-        <a href="mailto:YOUR-EMAIL@example.com" class="button">
-            Contact Me
-        </a>
-
-    </section>
+            </aside>
 
 
-    <!-- FOOTER -->
-    <footer>
+            <!-- =========================
+                 MAIN CONTENT
+            ========================== -->
 
-        <p>© 2026 Alexa Higginbotham</p>
+            <section class="content-area">
 
-    </footer>
+                <!-- Hero Image -->
+                <div class="hero-image">
+
+                    <!-- Replace this with your own image -->
+                    <img
+                        src="images/hero.jpg"
+                        alt="Hero image for my personal website"
+                    >
+
+                </div>
 
 
-    <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
+                <!-- Main Content -->
+                <article class="main-content">
+
+                    <h1>Welcome to My Website</h1>
+
+                    <p>
+                        Welcome to my personal website. This site is
+                        designed to provide an overview of my
+                        background, experiences, education, and
+                        involvement. It serves as a central place to
+                        learn more about who I am and the experiences
+                        that have helped shape my academic and
+                        professional journey.
+                    </p>
+
+                    <p>
+                        Throughout my education and professional
+                        experiences, I have developed skills in
+                        communication, teamwork, leadership,
+                        organization, and problem solving. I enjoy
+                        opportunities that allow me to learn new
+                        things, work with others, and contribute to
+                        meaningful projects.
+                    </p>
+
+                    <p>
+                        My work experience has provided me with
+                        valuable opportunities to develop practical
+                        skills and understand how classroom knowledge
+                        can be applied in real-world situations.
+                        These experiences have helped me become more
+                        confident, responsible, and adaptable.
+                    </p>
+
+                    <p>
+                        Education is also an important part of my
+                        journey. Through my academic experiences, I
+                        continue to develop my knowledge and explore
+                        areas that interest me. I believe that learning
+                        extends beyond the classroom and that every
+                        experience can provide an opportunity to grow.
+                    </p>
+
+                    <p>
+                        Outside of academics and work, involvement in
+                        different organizations, activities, and
+                        communities has allowed me to build
+                        relationships and develop additional
+                        leadership and teamwork skills. I look forward
+                        to continuing to learn, grow, and take on new
+                        opportunities in the future.
+                    </p>
+
+                </article>
+
+            </section>
+
+
+            <!-- =========================
+                 RIGHT SIDEBAR
+            ========================== -->
+
+            <aside class="right-sidebar">
+
+                <div class="sticky-content">
+
+                    <h2>Stay Connected</h2>
+
+                    <ul>
+
+                        <li>
+                            <a href="news.html">
+                                News
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="projects.html">
+                                Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                LinkedIn
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Instagram
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </aside>
+
+        </main>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer class="site-footer">
+
+            <p>
+                &copy; 2026 Alexa. All rights reserved.
+            </p>
+
+            <p>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                |
+
+                <a href="about.html">
+                    About
+                </a>
+
+                |
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                |
+
+                <a href="privacy.html">
+                    Privacy
+                </a>
+
+            </p>
+
+            <p>
+                Webmaster:
+                <a href="mailto:your-email@example.com">
+                    your-email@example.com
+                </a>
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT NAVIGATION
+    ========================== -->
+
+    <script src="navigation.js"></script>
 
 </body>
+
 </html>
