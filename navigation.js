@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <div class="secondary-navigation">
 
-            <a href="projects.html">Projects</a>
+   
 
             <a href="contact.html">Contact</a>
 
