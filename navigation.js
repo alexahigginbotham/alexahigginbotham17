@@ -85,3 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 });
+<a href="index.html" class="site-logo" aria-label="Alexa Higginbotham Home">
+    <span class="logo-circle">
+        <span class="logo-a">A</span>
+        <span class="logo-h">H</span>
+        <span class="logo-sparkle">✦</span>
+    </span>
+</a>
