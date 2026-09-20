@@ -30,8 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
    
 
-            <a href="contact.html">Contact</a>
-
         </div>
     `;
 
