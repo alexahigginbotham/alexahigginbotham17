@@ -24,9 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             <a href="involvement.html">Involvement</a>
 
-        </div>
-
-        <div class="secondary-navigation">
 
    
 
